@@ -1,0 +1,19 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    health:
+      show-details: always
+
+  metrics:
+    tags:
+      application: actuator-demo
+
+    web:
+      server:
+        request:
+          autotime:
+            enabled: true
